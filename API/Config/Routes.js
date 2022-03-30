@@ -8,5 +8,10 @@ module.exports = {
         controller: "TestFolder/TestRoute",
         allowedMethod: ['GET'],
         auth: false
+    },
+    "/testQuery/:id": {
+        controller: "TestQuery",
+        allowedMethod: ['GET'],
+        auth: false
     }
 }
