@@ -13,5 +13,10 @@ module.exports = {
         controller: "TestQuery",
         allowedMethod: ['GET'],
         auth: false
-    }
+    },
+    "/testQuery": {
+        controller: "TestQuery",
+        allowedMethod: ['GET'],
+        auth: false
+    },
 }
