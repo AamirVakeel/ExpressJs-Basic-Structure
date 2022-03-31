@@ -1,6 +1,6 @@
 
 var jwt = require('jsonwebtoken');
-var config = require('../Configurations/ConfigParams');
+var config = require('../Configurations/TokenConfig');
 class tokenization {
     generateUserToken(userId) {
         var token = jwt.sign({ userId: userId }, config.secret);
