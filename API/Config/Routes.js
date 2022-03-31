@@ -19,4 +19,9 @@ module.exports = {
         allowedMethod: ['GET'],
         auth: false
     },
+    "/testFb": {
+        controller: "FirebaseTest",
+        allowedMethod: ['GET'],
+        auth: false
+    },
 }
