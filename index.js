@@ -86,7 +86,7 @@ for (i = 0; i < apiRoutes.length; i++) {
                     let message = {}
                     message.API_USER_ID = userId != 'client' ? userId : undefined;
 
-                    var api = require('./API/BusinessLogic/' + routes[req.route.path].controller);
+                    var api = require('./API/Functions/' + routes[req.route.path].controller);
 
                     api.input(req, message);
 
@@ -130,7 +130,7 @@ for (i = 0; i < apiRoutes.length; i++) {
                     let message = {}
                     message.API_USER_ID = userId != 'client' ? userId : undefined;
 
-                    var api = require('./API/BusinessLogic/' + routes[req.route.path].controller);
+                    var api = require('./API/Functions/' + routes[req.route.path].controller);
 
                     api.input(req, message);
 
@@ -175,7 +175,7 @@ for (i = 0; i < apiRoutes.length; i++) {
                 if (needAuth == true ? userId : true) {
                     let message = {}
                     message.API_USER_ID = userId != 'client' ? userId : undefined;
-                    var api = require('./API/BusinessLogic/' + routes[req.route.path].controller);
+                    var api = require('./API/Functions/' + routes[req.route.path].controller);
                     api.input(req, message);
                     api.process(message);
                     let response = {
